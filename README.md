@@ -4,12 +4,11 @@ This is the UI prototype of Plantify- A shopping app made using React Native. Th
 
 ## Prototype Images
 
-<!-- **Plant List View/Home Screen** -->
 <p align = "center">
 <img align = "center" src="https://raw.githubusercontent.com/Kawaljeet2001/Plantify-ShoppingApp/master/prototype/HomeScreen.jpeg?token=ANR4W6S2ZKKLNRGZT6M2EXDATEXKK" height="600">
-<!-- **Plant Details Screen** -->
 <img align = "center" src="https://raw.githubusercontent.com/Kawaljeet2001/Plantify-ShoppingApp/master/prototype/DetailScreen.jpeg?token=ANR4W6QS5TH4HNJVRHZ2I3LATEXOI" height="600">
 </p>
+
 ## Tech Stack Used
  
 * [React Native](https://reactnative.dev/docs/getting-started "React Native") is used for creating the UI of the App.
