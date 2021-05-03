@@ -12,7 +12,7 @@ import Colors from "../Colors";
 
 const categories = ['POPULAR' , 'ORGANIC' , 'INDOORS' , 'SYNTHETIC'];
 
-export default function App() {
+export default function App({navigation}) {
     const [categoryActive , setCategoryActive] = React.useState(0);
     return (
         <SafeAreaView style = {styles.container}>
@@ -37,6 +37,12 @@ export default function App() {
                 })}
             </View>
             <View style = {styles.PlantItemsView}>
+                <TouchableWithoutFeedback onPress = {() => {
+                    navigation.navigate("Detail" ,{
+                        plantId : 0,
+                        image: `{require("../image1.png")}`
+                    } )
+                }}>
                 <View style = {styles.PlantItems}>
                     <Entypo style = {{alignSelf : 'flex-end' , borderRadius: 50 ,padding: 5 ,color: 'red' ,  backgroundColor: 'rgba(255 , 0 , 0 , 0.15)'}} name="heart" size={20} color="black" />
                     <Image style = {{maxHeight: '60%' , maxWidth : '60%'}} source = {require('../image1.png')}/>
@@ -48,6 +54,13 @@ export default function App() {
                         </View>
                     </View>
                 </View>
+                </TouchableWithoutFeedback>
+                <TouchableWithoutFeedback onPress = {() => {
+                    navigation.navigate("Detail" ,{
+                        plantId : 1,
+                        image: "../image2.png"
+                    } )
+                }}>
                 <View style = {styles.PlantItems}>
                     <Entypo style = {{alignSelf : 'flex-end' , borderRadius: 50 ,padding: 5 ,}} name="heart" size={20} color="black" />
                     <Image style = {{maxHeight: '60%' , maxWidth : '60%'}} source = {require('../image2.png')}/>
@@ -59,6 +72,13 @@ export default function App() {
                         </View>
                     </View>
                 </View>
+                </TouchableWithoutFeedback>
+                <TouchableWithoutFeedback onPress = {() => {
+                    navigation.navigate("Detail" ,{
+                        plantId : 2,
+                        image: "../image3.png"
+                    } )
+                }}>
                 <View style = {styles.PlantItems}>
                     <Entypo style = {{alignSelf : 'flex-end' , borderRadius: 50 ,padding: 5}} name="heart" size={20} color="black" />
                     <Image style = {{maxHeight: '60%' , maxWidth : '60%'}} source = {require('../image3.png')}/>
@@ -70,6 +90,13 @@ export default function App() {
                         </View>
                     </View>
                 </View>
+                </TouchableWithoutFeedback>
+                <TouchableWithoutFeedback onPress = {() => {
+                    navigation.navigate("Detail" ,{
+                        plantId : 3,
+                        image: "../image4.png"
+                    } )
+                }}>
                 <View style = {styles.PlantItems}>
                     <Entypo style = {{alignSelf : 'flex-end' , borderRadius: 50 ,padding: 5 ,color: 'red' ,  backgroundColor: 'rgba(255 , 0 , 0 , 0.15)'}} name="heart" size={20} color="black" />
                     <Image style = {{maxHeight: '60%' , maxWidth : '60%'}} source = {require('../image4.png')}/>
@@ -81,6 +108,7 @@ export default function App() {
                         </View>
                     </View>
                 </View>
+                </TouchableWithoutFeedback>
             </View>
         </SafeAreaView>
     );
