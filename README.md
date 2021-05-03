@@ -5,10 +5,11 @@ This is the UI prototype of Plantify- A shopping app made using React Native. Th
 ## Prototype Images
 
 **Plant List View/Home Screen**
-![Plant List View/Home Screen](prototype/HomeScreen.jpeg){:height="500px"}
+<img src="https://raw.githubusercontent.com/Kawaljeet2001/Plantify-ShoppingApp/master/prototype/HomeScreen.jpeg?token=ANR4W6S2ZKKLNRGZT6M2EXDATEXKK" height="400">
+
 
 **Plant Details Screen**
-![Plant Details Screen](prototype/DetailScreen.jpeg){:height="400px"}
+<img src="https://raw.githubusercontent.com/Kawaljeet2001/Plantify-ShoppingApp/master/prototype/DetailScreen.jpeg?token=ANR4W6QS5TH4HNJVRHZ2I3LATEXOI" height="400">
 
 ## Tech Stack Used
  
