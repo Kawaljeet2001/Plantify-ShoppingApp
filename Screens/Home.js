@@ -17,7 +17,10 @@ export default function App() {
     return (
         <SafeAreaView style = {styles.container}>
             <View style = {styles.headingView}>
-                <Text style = {styles.headingText}>Welcome to</Text>
+                <View style = {{flexDirection: 'row' , justifyContent: 'space-between' , alignItems: 'center'}}>
+                    <Text style = {styles.headingText}>Welcome to</Text>    
+                    <Entypo name="shopping-cart" size={24} color="black" />
+                </View>
                 <Text style = {styles.brandText}>Plantify Shop</Text>
             </View>
             <View style = {styles.SearchView}>
@@ -35,47 +38,47 @@ export default function App() {
             </View>
             <View style = {styles.PlantItemsView}>
                 <View style = {styles.PlantItems}>
-                    <Image style = {{maxHeight: '65%' , maxWidth : '65%'}} source = {require('../image1.png')}/>
+                    <Entypo style = {{alignSelf : 'flex-end' , borderRadius: 50 ,padding: 5 ,color: 'red' ,  backgroundColor: 'rgba(255 , 0 , 0 , 0.15)'}} name="heart" size={20} color="black" />
+                    <Image style = {{maxHeight: '60%' , maxWidth : '60%'}} source = {require('../image1.png')}/>
                     <View style = {{justifyContent: 'flex-start' , width: '100%' , marginTop: 10}}>
                         <Text style = {{fontWeight : 'bold' , fontSize : 16}}>Succulent Plant</Text>
                         <View style = {{flexDirection: 'row', justifyContent : 'space-between' , alignItems: 'center' , marginTop: 5}}>
                             <Text style = {{fontWeight : 'bold' , marginTop: 3 , fontSize : 16}}>$39.99</Text>
                             <Entypo name="plus" size={20} style = {{backgroundColor : Colors.green , borderRadius: 5 , width : 20 }} color="white" />
                         </View>
-
                     </View>
                 </View>
                 <View style = {styles.PlantItems}>
-                    <Image style = {{maxHeight: '65%' , maxWidth : '65%'}} source = {require('../image1.png')}/>
+                    <Entypo style = {{alignSelf : 'flex-end' , borderRadius: 50 ,padding: 5 ,}} name="heart" size={20} color="black" />
+                    <Image style = {{maxHeight: '60%' , maxWidth : '60%'}} source = {require('../image2.png')}/>
                     <View style = {{justifyContent: 'flex-start' , width: '100%' , marginTop: 10}}>
-                        <Text style = {{fontWeight : 'bold' , fontSize : 16}}>Succulent Plant</Text>
+                        <Text style = {{fontWeight : 'bold' , fontSize : 16}}>Bordanian Plant</Text>
                         <View style = {{flexDirection: 'row', justifyContent : 'space-between' , alignItems: 'center' , marginTop: 5}}>
-                            <Text style = {{fontWeight : 'bold' , marginTop: 3 , fontSize : 16}}>$39.99</Text>
+                            <Text style = {{fontWeight : 'bold' , marginTop: 3 , fontSize : 16}}>$29.49</Text>
                             <Entypo name="plus" size={20} style = {{backgroundColor : Colors.green , borderRadius: 5 , width : 20 }} color="white" />
                         </View>
-
                     </View>
                 </View>
                 <View style = {styles.PlantItems}>
-                    <Image style = {{maxHeight: '65%' , maxWidth : '65%'}} source = {require('../image1.png')}/>
+                    <Entypo style = {{alignSelf : 'flex-end' , borderRadius: 50 ,padding: 5}} name="heart" size={20} color="black" />
+                    <Image style = {{maxHeight: '60%' , maxWidth : '60%'}} source = {require('../image3.png')}/>
                     <View style = {{justifyContent: 'flex-start' , width: '100%' , marginTop: 10}}>
-                        <Text style = {{fontWeight : 'bold' , fontSize : 16}}>Succulent Plant</Text>
+                        <Text style = {{fontWeight : 'bold' , fontSize : 16}}>Pitcher Plant</Text>
                         <View style = {{flexDirection: 'row', justifyContent : 'space-between' , alignItems: 'center' , marginTop: 5}}>
-                            <Text style = {{fontWeight : 'bold' , marginTop: 3 , fontSize : 16}}>$39.99</Text>
+                            <Text style = {{fontWeight : 'bold' , marginTop: 3 , fontSize : 16}}>$24.99</Text>
                             <Entypo name="plus" size={20} style = {{backgroundColor : Colors.green , borderRadius: 5 , width : 20 }} color="white" />
                         </View>
-
                     </View>
                 </View>
                 <View style = {styles.PlantItems}>
-                    <Image style = {{maxHeight: '65%' , maxWidth : '65%'}} source = {require('../image1.png')}/>
+                    <Entypo style = {{alignSelf : 'flex-end' , borderRadius: 50 ,padding: 5 ,color: 'red' ,  backgroundColor: 'rgba(255 , 0 , 0 , 0.15)'}} name="heart" size={20} color="black" />
+                    <Image style = {{maxHeight: '60%' , maxWidth : '60%'}} source = {require('../image4.png')}/>
                     <View style = {{justifyContent: 'flex-start' , width: '100%' , marginTop: 10}}>
-                        <Text style = {{fontWeight : 'bold' , fontSize : 16}}>Succulent Plant</Text>
+                        <Text style = {{fontWeight : 'bold' , fontSize : 16}}>Eyucaliptus Plant</Text>
                         <View style = {{flexDirection: 'row', justifyContent : 'space-between' , alignItems: 'center' , marginTop: 5}}>
-                            <Text style = {{fontWeight : 'bold' , marginTop: 3 , fontSize : 16}}>$39.99</Text>
+                            <Text style = {{fontWeight : 'bold' , marginTop: 3 , fontSize : 16}}>$35.99</Text>
                             <Entypo name="plus" size={20} style = {{backgroundColor : Colors.green , borderRadius: 5 , width : 20 }} color="white" />
                         </View>
-
                     </View>
                 </View>
             </View>
@@ -160,7 +163,7 @@ export default function App() {
         // justifyContent: 'center',
         alignItems: 'center',
         borderRadius: 10,
-        height: 200,
+        height: 250,
         padding: 15,
         marginTop: 15,
     },
